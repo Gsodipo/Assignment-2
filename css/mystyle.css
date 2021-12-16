@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+body {
+	background-color: grey;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center {
+	text-align: center;
+	
+}
+.Youngboy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkExample {
+
+ background-color:white;
+ height:30px; 
+ width:100px; 
+ text-align: center;
+ padding:10px;
+
+}
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.flex-container3 > div {
+  background-color: #f1f1f1;
+  width:70%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
